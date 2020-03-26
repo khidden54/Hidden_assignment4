@@ -3,27 +3,31 @@ package Banking;
 public class SavingsAccount {
 	
 	private double savingsBalance;
-	private double annualInterestRate;
+	private static double annualInterestRate;
 	
 	SavingsAccount(){
 		double savingsBalance;
-		double annualInterestRate;
-		
 	}
 	
 	public void setBalance() {
-		savingsBalance = Bank.scan.nextDouble();
+		System.out.println("Enter the balance");
+		savingsBalance = savingsAccountTest.scan.nextDouble();
+	}
+	
+	public void setBalance(double savings) {
+		savingsBalance = savings;
 	}
 	
 	public double getBalance() {
 		return savingsBalance;
 	}
 	
-	public void setAnnualInterestRate() {
-		annualInterestRate = Bank.scan.nextDouble();
+	public static void setAnnualInterestRate(double interest) {
+		
+		annualInterestRate = interest;
 	}
 	
-	public double getAnnualInterestRate() {
+	public static double getAnnualInterestRate() {
 		return annualInterestRate;
 	}
 }
