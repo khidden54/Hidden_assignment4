@@ -1,8 +1,0 @@
-can 2
-world 2
-what 3
-this 1
-reality 1
-is 3
-hello 2
-my 1
